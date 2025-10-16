@@ -216,7 +216,7 @@ body {
 	vertical-align: top;
 	transition: box-shadow 0.2s;
 }
-/* ===== ТОВАРЫ ===== */
+/* ===== ТОВАРЫ ===== =*/
 .goods {
     display: flex; /* Горизонтальное расположение навыков */
     justify-content: center; /* Выравнивание по центру */
