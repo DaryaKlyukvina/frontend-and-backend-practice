@@ -4,38 +4,72 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Семестровая работа</title>
+        <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li>
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <div class="header">Хэдер</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link"
+                    href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                    href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                    href="practices.html">Практики</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                    href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                    href="contacts.html">Контакты</a></li>
+                 </ul>
+            </div>
+            <div id="content">
+                <div class="goods">
+                    <div class="product-card">
+                        <h1>ВАЙБУЮЩИЙ КОТИК</h1>
+                        <div class="product-gallery">
+                            <img src="../imgs/goodsup1.jpg" alt="котик" height="200px" width="200px">
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">1 ₽</span>
+                            <span class="old-price">2 ₽</span>
+                        </div>
+                        <div class="product-description">
+                            <p>ну котик что ещё сказать... тебе стоит почувствовать его вайб</p>
+                        </div>
+                        <button class="buy-button">забрать домой</button>
+                    </div>
+                    <div class="product-card">
+                        <h1>ХЛЕБ (не группа)</h1>
+                        <div class="product-gallery">
+                            <img src="../imgs/goodsup2.jpg" alt="хлеб" height="200px" width="200px">
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">22,99 ₽</span>
+                            <span class="old-price">23 ₽</span>
+                        </div>
+                        <div class="product-description">
+                            <p>похоже он тебя любит</p>
+                        </div>
+                        <button class="buy-button">съесть</button>
+                    </div>
+                    <div class="product-card">
+                        <h1>ПОХОЖЕ... ЭТО ТЫ</h1>
+                        <div class="product-gallery">
+                            <img src="../imgs/goodsup3.jpg" alt="неописуемо" height="200px" width="250px">
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">БЕСЦЕННО</span>
+                            <span class="old-price">все деньги мира</span>
+                        </div>
+                        <div class="product-description">
+                            <p>неописуемо</p>
+                        </div>
+                        <button class="buy-button">почухать</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">Футер</div>
         </div>
-        <div id="content3">
-            <div>
-                <h1>ТОВАР1</h1>
-                <img src="../imgs/goodsup1.jpg" alt="Фото товара" width="250" height="250">
-                <p>описание</p>
-                <p>цена 4 р</p>
-            </div>
-            <div>
-                <h1>ТОВАР2</h1>
-                <img src="../imgs/goodsup2.jpg" alt="Фото товара" width="250" height="250">
-                <p>описание</p>
-                <p>цена 15 р</p>
-            </div>
-            <div>
-                <h1>ТОВАР3</h1>
-                <img src="../imgs/goodsup3.jpg" alt="Фото товара" width="250" height="250">
-                <p>описание</p>
-                <p>цена БЕСЦЕННО</p>
-            </div>
-        </div>
-        <div id="footer">Футер</div>
     </body>
 </html>
