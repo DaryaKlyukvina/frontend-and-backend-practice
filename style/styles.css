@@ -56,6 +56,79 @@ body {
     */
     transform: translateY(-2px); /* Легкое поднятие элемента при наведении */
 }
+
+/* Базовые стили для навигации */
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 991.98px) {
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 0.25rem 0;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        display: block;
+        border-radius: 5px;
+        margin: 0.1rem 0;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Фикс для контейнера навигации */
+.navbar > .container {
+    flex-wrap: nowrap;
+}
+
+/* Убедимся, что навигация не выходит за границы */
+.navbar:not(.show) {
+    display: none !important;
+}
+
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .content {
     padding: 40px; /* Внутренние отступы контента */
@@ -122,6 +195,27 @@ body {
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3); /* Тень с голубым оттенком */
     transition: all 0.3s ease; /* Плавные анимации при изменении */
 }
+
+/* Навыки - адаптивность */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .skill-tag {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .skill-tag:hover {
     transform: translateY(-3px); /* Поднятие элемента при наведении */
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4); /* Увеличение тени при
