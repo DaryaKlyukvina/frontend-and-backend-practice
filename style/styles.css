@@ -108,9 +108,6 @@ body {
         font-size: 1.1rem;
     }
     
-    .container {
-    flex-direction: column;
-}
     .navbar-nav .nav-link {
         padding: 0.6rem 0.8rem;
         font-size: 0.95rem;
@@ -119,6 +116,7 @@ body {
     .container {
         padding-left: 10px;
         padding-right: 10px;
+        flex-direction: column;
     }
 }
 
