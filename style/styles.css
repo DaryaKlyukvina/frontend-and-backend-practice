@@ -120,16 +120,6 @@ body {
     }
 }
 
-/* Фикс для контейнера навигации */
-.navbar > .container {
-    flex-wrap: nowrap;
-}
-
-/* Убедимся, что навигация не выходит за границы */
-.navbar:not(.show) {
-    display: none !important;
-}
-
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .content {
     padding: 40px; /* Внутренние отступы контента */
