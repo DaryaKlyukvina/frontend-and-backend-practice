@@ -102,6 +102,10 @@ body {
     }
 }
 
+.container {
+    flex-direction: column;
+}
+
 /* Для очень маленьких экранов */
 @media (max-width: 576px) {
     .navbar-brand {
