@@ -285,7 +285,7 @@ body {
     градиентный фон */
     color: white; /* Белый цвет текста */
     text-align: left; /* Выравнивание по центру */
-    margin-bottom: 0px;
+    margin-top: 10px;
     padding: 10px; /* Внутренние отступы */
 }
 
@@ -366,6 +366,7 @@ body {
 .product-price {
     font-size: 20px;
 }
+
 .buy-button {
     border-radius: 25px; 
     background: #667eea;
@@ -377,4 +378,71 @@ body {
 .old-price {
     text-decoration: line-through;
     color: red;
+}
+
+/* Стили для модального окна звонка */
+#callModal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#callModal {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-simple {
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-simple h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 15px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-buttons .btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-buttons .btn:first-child {
+    background: #27ae60;
+    color: white;
+}
+
+.modal-buttons .btn:first-child:hover {
+    background: #219653;
+}
+
+.modal-buttons .btn-close {
+    background: #e74c3c;
+    color: white;
+}
+
+.modal-buttons .btn-close:hover {
+    background: #c0392b;
 }

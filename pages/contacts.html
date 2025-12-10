@@ -35,5 +35,47 @@
             </div>
             <div id="footer"> <p class="funny-text">© 2025 Все права защищены (ну почти все, HTML-код мы не патентуем) 🤓</p></div>
         </div>
+        <dialog id="callModal">
+    <div class="modal-simple">
+        <h2>📞 Позвонить нам</h2>
+        <p>Вы хотите позвонить по номеру:</p>
+        <p class="phone-number">+7 (495) 123-45-67</p>
+        
+        <div class="modal-buttons">
+            <button class="btn" onclick="window.location.href='tel:+74951234567'">
+                Да, позвонить
+            </button>
+            <button class="btn btn-close" onclick="callModal.close()">
+                Отмена
+            </button>
+        </div>
+    </div>
+</dialog>
+<script>
+// Получаем элементы
+const callButton = document.getElementById('call');
+const callModal = document.getElementById('callModal');
+
+// Открываем модальное окно при клике на кнопку "Позвонить"
+if (callButton) {
+    callButton.addEventListener('click', function() {
+        callModal.showModal();
+    });
+}
+
+// Закрытие при клике на фон
+callModal.addEventListener('click', function(event) {
+    if (event.target === this) {
+        this.close();
+    }
+});
+
+// Закрытие при нажатии ESC
+callModal.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        this.close();
+    }
+});
+</script>
     </body>
 </html>
