@@ -118,6 +118,30 @@ body {
         padding-right: 10px;
         flex-direction: column;
     }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: static; 
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+        .contacts1 {
+        /* Гарантируем, что контейнер не шире экрана */
+        max-width: 100vw;
+        width: calc(100% - 30px); /* Отступы по бокам */
+        margin: 0 15px;
+        padding: 15px;
+        
+        /* Важно для текста: */
+        overflow-x: hidden; /* Скрывает горизонтальный скролл */
+    }
 }
 
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
@@ -251,8 +275,13 @@ body {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Темный
     градиентный фон */
     color: white; /* Белый цвет текста */
-    text-align: center; /* Выравнивание по центру */
-    padding: 30px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание по центру */
+    margin-bottom: 0px;
+    padding: 10px; /* Внутренние отступы */
+}
+
+.funny-text{
+    margin-bottom: 0px;
 }
 /* ===== НОВОСТИ =====*/
 .news-card {
@@ -308,6 +337,8 @@ body {
     flex-wrap: wrap; /* Перенос на новую строку при необходимости */
     gap: 15px; /* Расстояние между навыками */
     margin: 30px 0; /* Вертикальные отступы */
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 .product-card {
     background: linear-gradient(135deg, #86a6c2 0%, #d7eaf9 100%); /* Голубой
@@ -320,7 +351,7 @@ body {
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3); /* Тень с голубым оттенком */
     transition: all 0.3s ease; /* Плавные анимации при изменении */
     max-width: 280px;
-    margin: 0 auto;
+    margin: 20px;
     align-content: center;
 }
 .product-price {
