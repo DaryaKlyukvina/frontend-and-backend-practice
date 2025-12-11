@@ -8,6 +8,9 @@ body {
     градиентный фон всей страницы */
     min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
 }
+* {
+    box-sizing: border-box;
+}
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
 .page-container {
     max-width: 1200px; /* Максимальная ширина контента */
@@ -110,6 +113,12 @@ body {
         align-self: center;
     }
 
+    .product-gallery{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    }
+
     .profile-photo {
         max-width: 60vw;
         align-self: center;
@@ -141,6 +150,7 @@ body {
         text-align: center;
         padding: 10px 0;
         border-bottom: 1px solid #eee;
+
     }
     
     .contacts1 {
