@@ -320,16 +320,15 @@ body {
 }
 /* ===== КОНТАКТЫ =====*/
 .contacts1 {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Светлый
-    градиентный фон */
-    padding: 25px; /* Внутренние отступы */
-    border-radius: 15px; /* Скругленные углы */
-    margin: 100px 100; /* Вертикальные отступы */
-    border-left: 5px solid #667eea; /* Синяя полоса слева */
-    font-size: 20px; /* Размер шрифта текста */
-    line-height: 2; /* Межстрочный интервал */
-    height: 300px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 100px 100;
+    border-left: 5px solid #667eea;
+    font-size: 20px; 
+    line-height: 2;
 }
+
 #call {
 	display: inline-block;	
 	box-sizing: border-box;
